@@ -1,0 +1,17 @@
+<h2>Robots</h2>
+<ul class="robots">
+  <li *ngFor="let robot of robots">
+    <a routerLink="/robots/{{robot.id}}">
+      <h2>{{ robot.title | uppercase}} Details</h2>
+      <div>
+        <label>Title:</label> {{robot.title}}
+      </div>
+      <div>
+        <label>Description:</label> {{robot.description}}
+      </div>
+      <div>
+        <label>Price:</label> {{robot.price}}
+      </div>
+    </a>
+  </li>
+</ul>

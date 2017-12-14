@@ -1,0 +1,16 @@
+<h2>{{ robot.title | uppercase}} Details</h2>
+<div>
+  <label>Title:</label>
+  <input [(ngModel)]="robot.title" placeholder="title"/>
+</div>
+<div>
+  <label>Description:</label>
+  <textarea [(ngModel)]="robot.description" placeholder="description"></textarea>
+</div>
+<div>
+  <label>Price:</label>
+  <input [(ngModel)]="robot.price" placeholder="19.99" />
+</div>
+
+<button (click)="buy()">Buy</button>
+<button (click)="goBack()">Back</button>

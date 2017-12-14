@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('front App', () => {
+describe('rbc-api-front App', () => {
   let page: AppPage;
 
   beforeEach(() => {
