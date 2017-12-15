@@ -15,7 +15,6 @@ export class RobotService {
   constructor(private http: HttpClient) { }
 
   getRobots(): Observable<Robot[]> {
-    console.log('service getRobots()');
     return this.http.get<Robot[]>(this.robotsUrl);
   }
 

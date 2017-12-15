@@ -1,6 +1,6 @@
 <h2>Robots</h2>
-<ul class="robots">
-  <li *ngFor="let robot of robots">
+<div class="robots">
+  <div *ngFor="let robot of robots">
     <a routerLink="/robots/{{robot.id}}">
       <h2>{{ robot.title | uppercase}} Details</h2>
       <div>
@@ -10,8 +10,10 @@
         <label>Description:</label> {{robot.description}}
       </div>
       <div>
-        <label>Price:</label> {{robot.price}}
+        <label>Price:</label> {{robot.price}} &#8364;
       </div>
     </a>
-  </li>
-</ul>
+    <button class="delete" title="buy robot" (click)="deleteRobot(robot)">Buy Robot</button>
+  </div>
+</div>
+<button class="add" routerLink="/robots/0">Add robot</button>

@@ -1,0 +1,21 @@
+
+a {
+  text-decoration: none;
+}
+
+.robots {
+  box-sizing: border-box;
+  display: table;
+  float: left;
+  width: 100%;
+}
+
+.robots > div {
+  border-style: solid;
+  width: 25%;
+}
+
+.add {
+  margin: 5px;
+  padding: 5px;
+}

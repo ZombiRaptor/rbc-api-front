@@ -15,7 +15,6 @@ export class RobotsComponent implements OnInit {
   constructor(private robotService: RobotService) { }
 
   ngOnInit() {
-    console.log(`ng onInit`);
     this.getRobots();
   }
 
@@ -35,6 +34,10 @@ export class RobotsComponent implements OnInit {
   deleteRobot(robot: Robot): void {
     this.robots = this.robots.filter(r => r !== robot);
     this.robotService.deleteRobot(robot).subscribe();
+  }
+
+  addRobot(): void {
+
   }
 
 }
